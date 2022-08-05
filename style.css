@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: #f3eae3;
+    font-family: 'Montserrat', sans-serif;
+}
+.mobile-img{
+    display: none;
+}
+img{
+    width: 100%;
+}
+.big-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.container{
+    display: flex;
+    max-width: 600px;
+    height: 450px;
+}
+.left-content{
+    width: 50%;
+}
+.left-content img{
+    border-radius: 15px 0 0 15px;
+}
+.right-content{
+    width: 50%;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+}
+.right-content h3{
+    color: #aaacb9;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.right-content h1{
+    margin-top: 20px;
+    font-family: 'Fraunces', serif;
+}
+.right-content p{
+    margin-top: 20px;
+    color: #aaacb9;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.right-content p:last-of-type{
+    display: flex;
+    align-items: center;
+}
+#special-price{
+    color: #3b8167;
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+#regular-price{
+    color: #aaacb9;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+button{
+    margin-top: 20px;
+    background-color: #3b8167;
+    color: #fff;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #1a4031;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:480px){
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+    }
+    .big-content{
+        width: 100%; 
+        margin-bottom: 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 342px
+        
+    }
+    .left-content{
+        width: 100%;
+    }
+    .left-content img{
+        border-radius: 15px 15px 0 0;
+    }
+    .right-content{
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+    button{
+        padding: 20px 90px;
+       
+    }
+}
